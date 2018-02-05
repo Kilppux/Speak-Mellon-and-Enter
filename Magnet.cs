@@ -31,7 +31,7 @@
             if (Physics.Raycast(transform.position, Vector3.forward, out _hit, 100.0f))
             {
                 Debug.Log("Magneettivoimaaaa");
-                if (_hit.collider.gameObject.name == "mellon")
+                if (_hit.collider.gameObject.tag == "mellon")
                 {
                     _hit.collider.gameObject.transform.position = magneettiKarki.transform.position;
                     Debug.Log("Meloniiiii");
