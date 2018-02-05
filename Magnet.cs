@@ -33,7 +33,9 @@
                 Debug.Log("Magneettivoimaaaa");
                 if (_hit.collider.gameObject.tag == "mellon")
                 {
-                    _hit.collider.gameObject.transform.position = magneettiKarki.transform.position;
+                    Rigidbody rb = _hit.collider.gameObject.GetComponent<Rigidbody>();
+                    rb.AddForce((magneettiKarki.transform.position - _hit.collider.gameObject.transform.position).normalized * 500);
+                    //_hit.collider.gameObject.transform.position = magneettiKarki.transform.position;
                     Debug.Log("Meloniiiii");
                 }
             }
