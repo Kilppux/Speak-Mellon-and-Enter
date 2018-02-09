@@ -64,36 +64,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1896933609810706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4446891410126894}
-  - component: {fileID: 65990815763299844}
-  - component: {fileID: 114532765399350404}
-  m_Layer: 2
-  m_Name: Melonistopper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4446891410126894
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896933609810706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4513614884111440}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4513614884111440
 Transform:
   m_ObjectHideFlags: 1
@@ -106,7 +76,6 @@ Transform:
   m_Children:
   - {fileID: 4613723164001188}
   - {fileID: 4868106749717122}
-  - {fileID: 4446891410126894}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -230,18 +199,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 0.99999994}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65990815763299844
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896933609810706}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 20.836351, y: 28.671526, z: 0.17954527}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114426563482536588
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -258,7 +215,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -275,19 +232,6 @@ MonoBehaviour:
   magneettiKarki: {fileID: 1761670643461622}
   mellon: {fileID: 1772622862924146, guid: ae7fd7e71821acd478a36f7cba8c822d, type: 2}
   laser: {fileID: 1151981182241896}
---- !u!114 &114532765399350404
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1896933609810706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e3f9310420b73945a71e468fce34866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magneettieste: {fileID: 1896933609810706}
-  mellon: {fileID: 1772622862924146, guid: ae7fd7e71821acd478a36f7cba8c822d, type: 2}
 --- !u!114 &114533254864118214
 MonoBehaviour:
   m_ObjectHideFlags: 1

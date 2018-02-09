@@ -28,6 +28,7 @@ GameObject:
   - component: {fileID: 114035445774892672}
   - component: {fileID: 82247375052497302}
   - component: {fileID: 114375689448905760}
+  - component: {fileID: 114369550290988304}
   m_Layer: 0
   m_Name: Mellon
   m_TagString: mellon
@@ -215,6 +216,18 @@ MonoBehaviour:
   allowedUseControllers: 0
   usingState: 0
   particles: {fileID: 1632501093571170, guid: a2e0487365a8a8c44ad9ded29f5a5ff7, type: 2}
+--- !u!114 &114369550290988304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1772622862924146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b482c6db59d0aa64eac72a17f7a47940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mellon: {fileID: 0}
 --- !u!114 &114375689448905760
 MonoBehaviour:
   m_ObjectHideFlags: 1
