@@ -35,10 +35,21 @@
                 {
                     Rigidbody rb = _hit.collider.gameObject.GetComponent<Rigidbody>();
                     _hit.collider.attachedRigidbody.useGravity = false;
-                    rb.AddForce((magneettiKarki.transform.position - _hit.collider.gameObject.transform.position).normalized * 500);
+                    rb.AddForce((magneettiKarki.transform.position - _hit.collider.gameObject.transform.position).normalized * 300);
                     //_hit.collider.gameObject.transform.position = magneettiKarki.transform.position;
-                    Debug.Log("Meloniiiii");
+                    Debug.Log("Meloniiiii tuleeeee");
                 }
+            }
+        }
+
+        void OnTriggerEnter(Collider col)
+        {
+            if (col.gameObject.tag == "mellon")
+            {
+                Debug.Log("Osuttiiiin");
+                Rigidbody rb = col.gameObject.GetComponent<Rigidbody>();
+                rb.velocity = Vector3.zero;
+                col.attachedRigidbody.useGravity = true;
             }
         }
     }
