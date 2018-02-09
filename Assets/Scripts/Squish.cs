@@ -9,19 +9,19 @@
 
 		public override void StartUsing(VRTK_InteractUse usingObject){
 			base.StartUsing(usingObject);
-			Spawn();
+			Squished();
 		}
 
 		void Start(){
 			
 		}
 
-		private void Spawn(){
-			Debug.Log ("Squish");
+		public void Squished(){
+			//Debug.Log ("Squish");
 			GameObject clone = Instantiate(particles, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
 			clone.transform.localScale = gameObject.transform.localScale * 2;
 			Destroy (clone, 2f);
-			Destroy (gameObject,0.1f);
+			Destroy (gameObject);
 		}
 	}
 }

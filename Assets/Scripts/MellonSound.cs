@@ -18,7 +18,7 @@ public class MellonSound : MonoBehaviour {
 
 	void OnCollisionEnter()
 	{
-		Debug.Log ("aania");
+		//Debug.Log ("aania");
 		audioSource.PlayOneShot (hitSound);
 	}
 }

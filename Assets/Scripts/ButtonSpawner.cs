@@ -27,7 +27,7 @@
 
 		private void Spawn()
 		{
-			Debug.Log ("spawnaus");
+			//Debug.Log ("spawnaus");
 			GameObject mellonClone = Instantiate(mellon, spawner.transform.position, gameObject.transform.rotation) as GameObject;
 			audioSource.PlayOneShot (spawnSound);
 		}

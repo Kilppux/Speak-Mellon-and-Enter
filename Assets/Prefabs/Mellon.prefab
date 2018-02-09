@@ -30,7 +30,7 @@ GameObject:
   - component: {fileID: 114375689448905760}
   m_Layer: 0
   m_Name: Mellon
-  m_TagString: Untagged
+  m_TagString: mellon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,7 +103,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!82 &82247375052497302
 AudioSource:
   m_ObjectHideFlags: 1
@@ -124,7 +124,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 100
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -171,7 +171,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -268,7 +268,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1772622862924146}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 1c68fff5e0a4a864b96cd684fe43e05a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
