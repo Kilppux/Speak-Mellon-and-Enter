@@ -12,6 +12,7 @@
         public GameObject laser;
         private float force;
 
+
         public override void StartUsing(VRTK_InteractUse usingObject)
         {
             base.StartUsing(usingObject);
