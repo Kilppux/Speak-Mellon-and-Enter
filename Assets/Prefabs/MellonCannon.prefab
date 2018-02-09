@@ -43,7 +43,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1643094920633138
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1116257523576444}
   m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 8.42, y: 0.99, z: 8.61}
+  m_LocalPosition: {x: 7.01, y: 0.99, z: 7.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4635051714432540}
@@ -206,12 +206,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1643094920633138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2baab2a68c14d434ea7282461b1213e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bc01281d4274554c854a6740dee803c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cannonTip: {fileID: 4333945838397916}
   mellon: {fileID: 1772622862924146, guid: ae7fd7e71821acd478a36f7cba8c822d, type: 2}
-  speed: 3
+  speed: 4
 --- !u!136 &136342921455754898
 CapsuleCollider:
   m_ObjectHideFlags: 1
