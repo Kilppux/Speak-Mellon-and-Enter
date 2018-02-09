@@ -9,6 +9,7 @@
 
         public GameObject magneettiKarki;
         public GameObject mellon;
+        public GameObject laser;
         private float force;
 
         public override void StartUsing(VRTK_InteractUse usingObject)
@@ -28,11 +29,13 @@
             Debug.Log("Magneettia kaytetaan");
             RaycastHit _hit;
             Debug.DrawRay(transform.position, transform.forward, Color.red);
-            if (Physics.Raycast(transform.position, Vector3.forward, out _hit, 100.0f))
+            laser.SetActive(true);
+            if (Physics.Raycast(transform.position, transform.forward, out _hit, 100.0f))
             {
                 Debug.Log("Magneettivoimaaaa");
                 if (_hit.collider.gameObject.tag == "mellon")
                 {
+                    laser.SetActive(false);
                     Rigidbody rb = _hit.collider.gameObject.GetComponent<Rigidbody>();
                     _hit.collider.attachedRigidbody.useGravity = false;
                     rb.AddForce((magneettiKarki.transform.position - _hit.collider.gameObject.transform.position).normalized * 300);
